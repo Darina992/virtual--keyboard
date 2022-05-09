@@ -1,0 +1,108 @@
+.conteiner
+  font-family: 'Lato', sans-serif
+$green-color : #a8bfa9
+$dark-color : #191c17
+h1
+  font-weight: 900
+  text-align: center
+.wrapper
+  width: 850px
+  max-width: 100%
+  height: auto
+  margin: 50px auto
+textarea
+  width: 100%
+  height: 100px
+  padding: 10px
+  box-sizing: border-box
+  resize: none
+  font-size: 22px
+  border: 2px solid $dark-color
+  border-radius: 5px
+textarea:focus
+  border: 2px solid $dark-color
+  border-radius: 5px
+.buttons
+  background-color: #2f9433
+  margin-top: 30px
+  border: $dark-color 2px solid
+  border-radius: 5px
+.row
+  display: flex
+  flex-direction: row
+
+
+.button
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: space-between
+  margin: 4px
+  padding: 2px
+  box-sizing: border-box
+  width: 50px
+  height: 50px
+  border-radius: 5px
+  background-color: $dark-color
+  color: white
+  font-weight: 700
+  cursor: pointer
+  transition: 0.2s
+
+.add-button
+  color: grey
+.add-button.light
+  color: white
+  transition: 0.2s
+.main-button.not-light
+  color: grey
+.one-item-key
+  justify-content: center
+.backspace-key
+  width: 90px
+.tab-key
+  width: 88px
+.capslk-key
+  width: 96px
+.enter-key
+  width: 100px
+.win-key
+.shift-left-key
+  width: 142px
+.space-key
+  width: 317px
+.alt-key
+.ctrl-key
+  width: 80px
+
+
+.button.active,.button:active
+  background-color: $green-color
+  color: black
+  animation: keys-press-animation 0.5s forwards
+.button:hover
+  background-color: $green-color
+  color: black
+.button.remove
+  animation: keys-remove-animation 0.5s forwards
+@keyframes keys-press-animation
+  0%
+    transform: scale(1)
+    border-radius: 5px
+  100%
+    transform: scale(0.95)
+    border-radius: 10px
+
+@keyframes keys-remove-animation
+  0%
+    background-color: $green-color
+    color: black
+    transform: scale(0.95)
+    border-radius: 10px
+  100%
+    background-color: $dark-color
+    color: white
+    transform: scale(1)
+    border-radius: 5px
+p
+  text-align: center
